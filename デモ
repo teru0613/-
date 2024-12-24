@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure GPT Access</title>
+    <script>
+        function authenticate() {
+            const password = document.getElementById("password").value;
+            const correctPassword = "your-secure-password"; // 設定するパスワード
+            if (password === correctPassword) {
+                window.location.href = "https://chatgpt.com/g/g-673d327c89e08191b75af22f5690ae13-cai-yong-asisuto"; // GPTsのURL
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Protected GPT Access</h1>
+    <p>Enter the password to access the GPT:</p>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="authenticate()">Submit</button>
+</body>
+</html>
